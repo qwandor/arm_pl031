@@ -58,9 +58,16 @@ impl Rtc {
     }
 
     /// Sets the current time in seconds since UNIX epoch.
-    pub fn set_unix_timestamp(&self, unix_time: u32) {
+    pub fn set_unix_timestamp(&mut self, unix_time: u32) {
         // SAFETY: We know that self.registers points to the control registers
         // of a PL031 device which is appropriately mapped.
         unsafe { addr_of_mut!((*self.registers).lr).write_volatile(unix_time) }
     }
 }
+
+// SAFETY: `Rtc` just contains a pointer to device memory, which can be accessed from any context.
+unsafe impl Send for Rtc {}
+
+// SAFETY: An `&Rtc` only allows reading device registers, which can safety be done from multiple
+// places at once.
+unsafe impl Sync for Rtc {}
