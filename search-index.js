@@ -1,0 +1,5 @@
+var searchIndex = new Map(JSON.parse('[\
+["arm_pl031",{"t":"FNNNNNNNNNNNNNNNNNN","n":["Rtc","borrow","borrow_mut","clear_interrupt","enable_interrupt","from","get_time","get_unix_timestamp","interrupt_pending","into","matched","new","set_match","set_match_timestamp","set_time","set_unix_timestamp","try_from","try_into","type_id"],"q":[[0,"arm_pl031"],[19,"chrono::offset::utc"],[20,"chrono::datetime"],[21,"core::num::error"],[22,"core::result"],[23,"core::any"]],"i":[0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],"f":"`{{{b{c}}}{{b{e}}}{}{}}{{{b{dc}}}{{b{de}}}{}{}}{{{b{df}}}h}{{{b{df}}j}h}{cc{}}{{{b{f}}}{{n{l}}}}{{{b{f}}}A`}{{{b{f}}}j}{ce{}{}}1{A`f}{{{b{df}}{n{l}}}{{Ad{hAb}}}}{{{b{df}}A`}h}10{c{{Ad{e}}}{}{}}0{{{b{c}}}Af{}}","D":"An","p":[[1,"reference"],[0,"mut"],[5,"Rtc",0],[1,"unit"],[1,"bool"],[5,"Utc",19],[5,"DateTime",20],[1,"u32"],[5,"TryFromIntError",21],[6,"Result",22],[5,"TypeId",23]],"r":[],"b":[],"c":"OjAAAAAAAAA=","e":"OjAAAAEAAAAAAAQAEAAAAAIAAwARABIAEwA="}]\
+]'));
+if (typeof exports !== 'undefined') exports.searchIndex = searchIndex;
+else if (window.initSearch) window.initSearch(searchIndex);
